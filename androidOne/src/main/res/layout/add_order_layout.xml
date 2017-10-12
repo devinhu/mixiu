@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/bg_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="客户"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_customer"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical|right"
+                    android:hint="请选择客户"
+                    android:maxLines="1"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:textColor="@color/txt_black"
+                    android:textColorHint="@color/part_color"
+                    android:textSize="16sp" />
+
+                <ImageView style="@style/arrow_item_right" />
+
+            </LinearLayout>
+
+            <View style="@style/mine_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/bg_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_color" />
+            </LinearLayout>
+
+            <View style="@style/mine_split_line" />
+
+            <LinearLayout
+                android:id="@+id/layout_receiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_bg"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="收货人"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_receiver"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical|right"
+                    android:hint="请选择收货人"
+                    android:maxLines="1"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:textColor="@color/txt_black"
+                    android:textColorHint="@color/part_color"
+                    android:textSize="16sp" />
+
+                <ImageView style="@style/arrow_item_right" />
+
+            </LinearLayout>
+
+            <View style="@style/mine_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_bg"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="联系电话"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_phone"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical|right"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:textColor="@color/txt_black"
+                    android:textColorHint="@color/part_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <View style="@style/mine_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_bg"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="收货地址"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_address"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical|right"
+                    android:maxLines="5"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:textColor="@color/txt_black"
+                    android:textColorHint="@color/part_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/bg_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_color" />
+            </LinearLayout>
+
+            <View style="@style/mine_split_line" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_bg"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="产品名称"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_product"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical|right"
+                    android:hint="请选择产品"
+                    android:maxLines="1"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:textColor="@color/txt_black"
+                    android:textColorHint="@color/part_color"
+                    android:textSize="16sp" />
+
+                <ImageView style="@style/arrow_item_right" />
+
+            </LinearLayout>
+
+            <View style="@style/mine_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_bg"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="产品底价"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_baseprice"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical|right"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:textColor="@color/txt_black"
+                    android:textColorHint="@color/part_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View style="@style/mine_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_bg"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="产品数量"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_number"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical|right"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:maxLines="1"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:textColor="@color/txt_black"
+                    android:textColorHint="@color/part_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View style="@style/mine_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_bg"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="产品备注"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_desc"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical|right"
+                    android:maxLines="5"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:textColor="@color/txt_black"
+                    android:textColorHint="@color/part_color"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View style="@style/mine_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_bg"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="产品图片"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+                    android:id="@+id/img_product"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_margin="10dip"
+                    android:background="@drawable/icon_default" />
+
+            </LinearLayout>
+
+            <View style="@style/mine_split_line" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_item_bg"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:text="本周采购"
+                    android:textColor="@color/secondary_color"
+                    android:textSize="16sp" />
+
+                <ToggleButton
+                    android:id="@+id/btn_planflag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dip"
+                    android:background="@android:color/transparent"
+                    android:button="@drawable/toggle_btn"
+                    android:checked="true"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+            </LinearLayout>
+
+            <View style="@style/mine_split_line" />
+
+            <TextView
+                android:id="@+id/save_txt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/corner_pink_btn_10"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_item_bg">
+
+        <TextView
+            android:id="@+id/service_title"
+            style="@style/mine_item_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="120dp"
+            android:layout_toRightOf="@id/icon_order"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/service_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/secondary_color"
+            android:textSize="14sp" />
+
+        <ImageView style="@style/arrow_item_right" />
+
+        <View
+            android:id="@+id/split_view"
+            style="@style/mine_split_line"
+            android:layout_below="@+id/service_title"
+            android:layout_marginLeft="15dp" />
+
+        <View
+            android:id="@+id/line_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service_title"
+            android:background="@color/line_color"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>
